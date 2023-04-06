@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TurismoFácil - Alquileres Vacacionales</title>
+    <title>Lazy Owner - Alquileres Vacacionales</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -18,10 +18,18 @@
             padding-top: 30px;
             min-height: 70px;
             border-bottom: #e8491d 3px solid;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
         }
         header h1 {
             margin: 0;
             padding: 0;
+        }
+        /* Reemplaza 'logo.png' con la ruta de tu archivo de logo */
+        header img {
+            height: 50px;
         }
         nav {
             background-color: #e8491d;
@@ -43,11 +51,39 @@
         h2 {
             color: #35424a;
         }
+        /* Agrega estilos adicionales para las imágenes y el diseño aquí */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .intro {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .intro-text {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 20px;
+        }
+        .service {
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>TurismoFácil</h1>
+        <h1>Lazy Owner</h1>
+        <!-- Reemplaza 'logo.png' con la ruta de tu archivo de logo -->
+        <img src="logo.png" alt="Lazy Owner logo">
     </header>
     <nav>
         <a href="#">Inicio</a>
@@ -55,21 +91,50 @@
         <a href="#">Contacto</a>
     </nav>
     <div class="container">
-        <h2>Bienvenido a TurismoFácil</h2>
-        <p>
-            TurismoFácil es una empresa especializada en la gestión de alquileres vacacionales en Torremolinos. Nos encargamos de todo el proceso, desde la legalización de la vivienda hasta la gestión de las reservas y el mantenimiento.
-        </p>
+        <div class="intro">
+            <div class="intro-text">
+                <h2>Bienvenido a Lazy Owner</h2>
+                <p>
+                    Lazy Owner es una empresa especializada en la gestión integral de alquileres vacacionales en Torremolinos. Nuestro objetivo es brindarle tranquilidad y seguridad, asegurándonos las reservas y el mantenimiento. Con Lazy Owner, ¡disfrute de la facilidad y despreocúpese!
+                </p>
+            </div>
+            <!-- Reemplaza 'intro-image.jpg' con la ruta de la imagen que desees usar -->
+            <img src="intro-image.jpg" alt="Imagen de bienvenida">
+        </div>
         <h2>Nuestros servicios</h2>
-        <ul>
-            <li>Legalización de viviendas para alquiler turístico</li>
-            <li>Gestión de impuestos y requerimientos obligatorios</li>
-            <li>Entrega y recepción de llaves</li>
-            <li>Solución de incidencias</li>
-            <li>Enseñar el funcionamiento de la casa a los inquilinos</li>
-            <li>Gestión de plataformas como Airbnb, Booking.com y VRBO</li>
-            <li>Limpieza y reposición de amenities, menaje y lencería</li>
-            <li>Asesoramiento al arrendador y listado de inventario inicial</li>
-        </ul>
+        <div class="services">
+            <div class="service">
+                <!-- Reemplaza 'service1.jpg' con la ruta de la imagen que desees usar -->
+                <img src="service1.jpg" alt="Servicio 1">
+                <h3>Legalización y cumplimiento normativo</h3>
+                <p>Nos encargamos de la legalización de su vivienda y nos aseguramos de cumplir con todos los requisitos y regulaciones aplicables al alquiler turístico.</p>
+            </div>
+            <div class="service">
+                <!-- Reemplaza 'service2.jpg' con la ruta de la imagen que desees usar -->
+                <img src="service2.jpg" alt="Servicio 2">
+                <h3>Entrega de llaves y atención al huésped</h3>
+                <p>Recibimos a sus huéspedes, entregamos las llaves y les enseñamos el funcionamiento de la casa, garantizando una experiencia agradable y sin complicaciones.</p>
+            </div>
+            <div class="service">
+                <!-- Reemplaza 'service3.jpg' con la ruta de la imagen que desees usar -->
+                <img src="service3.jpg" alt="Servicio 3">
+                <h3>Administración de plataformas de reserva</h3>
+                <p>Gestionamos las reservas en plataformas como Airbnb, Booking.com y VRBO, actuando como intermediario entre usted y sus huéspedes.</p>
+            </div>
+            <div class="service">
+                <!-- Reemplaza 'service4.jpg' con la ruta de la imagen que desees usar -->
+                <img src="service4.jpg" alt="Servicio 4">
+                <h3>Limpieza y mantenimiento</h3>
+                <p>Nos ocupamos de la limpieza y el mantenimiento de su propiedad, incluyendo la reposición de amenities, menaje y lencería, para que todo esté en perfecto estado.</p>
+            </div>
+            <div class="service">
+                <!-- Reemplaza 'service5.jpg' con la ruta de la imagen que desees usar -->
+                <img src="service5.jpg" alt="Servicio 5">
+                <h3>Asesoramiento y seguimiento</h3>
+                <p>Le asesoramos sobre los elementos necesarios para el alquiler y realizamos un seguimiento continuo de su propiedad, garantizando su éxito en el mercado de alquiler vacacional.</p>
+            </div>
+        </div>
     </div>
 </body>
 </html>
+
