@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background-color: transparent;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+.nav-link {
+    text-decoration: none;
+    margin: 0;
+    color: #1a1a1a; /* Gris oscuro para las letras */
+    background-color: rgba(241, 241, 241, 0.3); /* Fondo gris claro muy translúcido */
+    padding: 5px 5px; /* Ajuste de padding para botones más estrechos */
+    border-radius: 0; /* Quitar bordes redondeados */
+    display: inline-block;
+    width: calc(70% / 7); /* Ancho igual para todos los botones */
+    text-align: center;
+    box-sizing: border-box; /* Incluye padding y bordes en el cálculo del ancho */
+}
+.nav-link:hover {
+    color: #000; /* Cambiar el color del texto a negro al pasar el cursor por encima */
+    background-color: rgba(224, 224, 224, 0.5); /* Fondo gris más oscuro translúcido al pasar el cursor por encima */
+}
+.nav-link.active {
+    background-color: rgba(208, 208, 208, 0.5); /* Fondo gris aún más oscuro translúcido cuando está activo */
+}
+.main {
+    text-align: center;
+    padding: 40px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 80px;
+}
+.main img {
+    max-width: 100%;
+    height: auto;
+}
+.main p {
+    font-size: 18px;
+    margin: 30px 0;
+}
+.image-row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+.image-row img {
+    width: 30%;
+    height: auto;
+    object-fit: cover;
+}
++
